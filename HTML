@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memoryiit - Página de Recuerdos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Memoryiit</h1>
+        <p>Guarda y comparte tus recuerdos más preciados</p>
+    </header>
+
+    <main>
+        <section id="memories">
+            <h2>Recuerdos</h2>
+            <div id="memory-list">
+                <!-- Aquí se cargarán los recuerdos dinámicamente -->
+            </div>
+        </section>
+
+        <section id="add-memory">
+            <h2>Añadir un Recuerdo</h2>
+            <form id="memory-form">
+                <label for="title">Título:</label>
+                <input type="text" id="title" name="title" required>
+
+                <label for="description">Descripción:</label>
+                <textarea id="description" name="description" required></textarea>
+
+                <label for="image">Imagen:</label>
+                <input type="file" id="image" name="image" accept="image/*">
+
+                <button type="submit">Guardar Recuerdo</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Memoryiit. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
